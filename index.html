@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Paint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/brands.min.css" rel="stylesheet">
+    <link href="css/solid.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="top-menu">
+    <div class="menu-group always-visible">
+        <button id="button-new" class="tooltip" data-tooltip="Rensa canvas">
+            <i class="fa-solid fa-file"></i>
+        </button>
+        <button id="button-open" class="tooltip" data-tooltip="Lägg till bild">
+            <i class="fa-regular fa-folder-open"></i>
+        </button>
+        <button id="button-save" class="tooltip" data-tooltip="Spara bild">
+            <i class="fa-solid fa-floppy-disk"></i>
+        </button>
+    </div>
+</div>
+
+<div id="main-content">
+    <div id="side-menu">
+        <div id="tools-group-draw" class="menu-group tools-group">
+            <button id="brush" class="selected tooltip" data-tooltip="Pensel">
+                <i class="fa-solid fa-brush"></i>
+            </button>
+            <button id="eraser" class="tooltip" data-tooltip="Sudd">
+                <i class="fa-solid fa-eraser"></i>
+            </button>
+        </div>
+        <div id="tools-group-text" class="menu-group tools-group">
+            <button id="text" class="tooltip" data-tooltip="Text">
+                <i class="fa-solid fa-t"></i>
+            </button>
+        </div>
+        <div class="menu-group">
+            <button id="colorPickerOpener" class="tooltip" data-tooltip="Färgval"></button>
+            <div id="colorPalette" style="display:none;">
+                <div class="colorOption" style="background-color: #000000;"></div>
+                <div class="colorOption" style="background-color: #ffffff;"></div>
+                <div class="colorOption" style="background-color: #FF0000;"></div>
+                <div class="colorOption" style="background-color: #00FF00;"></div>
+                <div class="colorOption" style="background-color: #0000FF;"></div>
+                <div class="colorOption" style="background-color: #FFFF00;"></div>
+                <div class="colorOption" style="background-color: #FF00FF;"></div>
+                <div class="colorOption" style="background-color: #00FFFF;"></div>
+                <div class="colorOption" style="background-color: #800000;"></div>
+                <div class="colorOption" style="background-color: #008000;"></div>
+                <div class="colorOption" style="background-color: #000080;"></div>
+                <div class="colorOption" style="background-color: #808000;"></div>
+                <div class="colorOption" style="background-color: #800080;"></div>
+                <div class="colorOption" style="background-color: #008080;"></div>
+                <div class="colorOption" style="background-color: #808080;"></div>
+                <div class="colorOption" style="background-color: #C0C0C0;"></div>
+                <div class="colorOption" style="background-color: #FFA500;"></div>
+                <div class="colorOption" style="background-color: #A52A2A;"></div>
+                <div class="colorOption" style="background-color: #800000;"></div>
+                <div class="colorOption" style="background-color: #2E8B57;"></div>
+                <div class="colorOption" style="background-color: #800080;"></div>
+                <label class="hidden" for="customColorPicker"></label>
+                <input type="color" id="customColorPicker">
+            </div>
+        </div>
+    </div>
+    <div id="canvas-container">
+        <canvas id="paintCanvas"></canvas>
+    </div>
+</div>
+<div id="tooltip"></div>
+<div id="cursorIndicator"></div>
+<input type="file" id="fileInput" class="hidden">
+
+<script type="module" src="file:///C:/Users/FlyingHat/Desktop/JS KURs/U4js/Main.js"></script>
+</body>
+</html>
