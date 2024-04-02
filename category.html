@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Title</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <nav class="navbar p-0 navbar-expand-lg navbar-light bg-light sticky-top">
+         <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+            <img src="images/logo.webp" alt="Logo" height="30">
+            </a>
+            <div class="collapse navbar-collapse" id="menu">
+               <ul class="navbar-nav me-auto navbar-light align-items-center d-flex">
+                  <li class="nav-item dropdown normal-dropdown bg-transparent">
+                     <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                     Sidor
+                     </button>
+                     <ul class="dropdown-menu dropdown-menu-light">
+                        <li><a class="dropdown-item" href="index.html"><span class="mdi mdi-home-outline"></span> Hem</a></li>
+                        <li><a class="dropdown-item" href="category.html"><span class="mdi mdi-shape"></span> Kategori</a></li>
+                        <li><a class="dropdown-item" href="product.html"><span class="mdi mdi-cube"></span> Produkt</a></li>
+                        <li><a class="dropdown-item" href="cart.html"><span class="mdi mdi-cart"></span> Kundvagn</a></li>
+                        <li><a class="dropdown-item" href="login.html"><span class="mdi mdi-login"></span> Inloggning</a></li>
+                        <li><a class="dropdown-item" href="locations.html"><span class="mdi mdi-map-marker-multiple-outline"></span> Platser</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown mega-menu position-static">
+                     <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dator</button>
+                     <div class="dropdown-menu mega-menu-dropdown rounded-0 border-0 w-100 h-auto overflow-hidden border-top">
+                        <div class="row">
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Enheter</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-laptop"></span> Laptop</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-desktop-classic"></span> Stationära datorer</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-tablet"></span> Surfplattor</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Tillbehör</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-monitor"></span> Datorskärmar</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-printer"></span> Skrivare & Scanner</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-network"></span> Nätverk</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-cable-data"></span> Datortillbehör</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Datorkomponenter</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-harddisk"></span> Hårddisk & SSD</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-expansion-card"></span> Grafikkort</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-cpu-64-bit"></span> Processor</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-developer-board"></span> Moderkort</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-cube-outline"></span> Datorchassi</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-server-outline"></span> NUC / Barebone</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-memory"></span> RAM-minne</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-lightning-bolt"></span> Nätaggregat</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-plus-network-outline"></span> Nätverkskort</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-coolant-temperature"></span> Kylning</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-ethernet-cable"></span> Installationstillbehör</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-update"></span> Uppgraderingspaket</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 mb-4">
+                              <h5 class="ms-1">Programvara</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-application"></span> Programvara</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown mega-menu position-static">
+                     <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Hem & Fritid</button>
+                     <div class="dropdown-menu mega-menu-dropdown rounded-0 border-0 w-100 h-auto overflow-hidden border-top">
+                        <div class="row">
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Hem och trädgård</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-grill"></span> Grill</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-vacuum"></span> Dammsugare & Rengöring</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-shovel"></span> Trädgård</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-lightbulb"></span> Lampor & Belysning</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Kök och köksredskap</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-coffee-maker"></span> Kaffemaskiner</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-stove"></span> Köksmaskiner</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-silverware-spoon"></span> Köksredskap</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Teknik och elektronik</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-home-automation"></span> Smarta Hem</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-car-back"></span> Elfordon</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-navigation"></span> Bil & GPS</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-battery"></span> El & Batterier</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 mb-4">
+                              <h5 class="ms-1">Fritid och hobby</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-content-cut"></span> Personvård</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-wrench"></span> Verktyg</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-quadcopter"></span> Drönare & Actionkameror</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown mega-menu position-static">
+                     <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Bild & Ljud</button>
+                     <div class="dropdown-menu mega-menu-dropdown rounded-0 border-0 w-100 h-auto overflow-hidden border-top">
+                        <div class="row">
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Bild</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-television"></span> TV</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-projector"></span> Projektorer</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-sign-text"></span> Digital signage</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Ljud</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-speaker"></span> Högtalare</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-headset"></span> Hörlurar</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-soundbar"></span> Soundbar</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-radio"></span> Radio & Stereo</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-microphone"></span> Mikrofoner</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-knob"></span> DJ- & PA-utrustning</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Streaming och underhållning</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-movie"></span> Film & Musik</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-view-stream"></span> Streamingtjänster</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown mega-menu position-static">
+                     <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Vitvaror</button>
+                     <div class="dropdown-menu mega-menu-dropdown rounded-0 border-0 w-100 h-auto overflow-hidden border-top">
+                        <div class="row">
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Tvätt & Tork</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-washing-machine"></span> Tvättmaskin</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-file-cabinet"></span> Torktumlare & Torkskåp</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-tumble-dryer"></span> Kombinerad Tvättmaskin & Torktumlare </a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Diskmaskin</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-dishwasher"></span> Diskmaskin</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 border-right mb-4">
+                              <h5 class="ms-1">Ugn & Spis</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-induction"></span> Spishäll</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-stove"></span> Ugn</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-stove"></span> Spis</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-microwave"></span> Mikrovågsugn</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-toaster-oven"></span> Miniugn & Bordsspis</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-pizza"></span> Pizzaugn</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-countertop-outline"></span> Minikök</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-induction"></span> Kokplatta</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-heat-wave"></span> Värmelåda</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 mb-4">
+                              <h5 class="ms-1">Kyl & Frys</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-fridge"></span> Kyl & Frys kombiskåp</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-fridge-industrial"></span> Kylskåp</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-fridge-industrial-outline"></span> Frysskåp</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-fridge-top"></span> Frysbox</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-fridge-variant"></span> Kyl & Frys side-by-side</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-fridge-variant-outline"></span> Integrerad Kyl och Frys</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-fridge-top"></span> Minikyl</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-bag-personal-outline"></span> Kylväskor & Kylboxar</a>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-6 col-lg-3 mb-4">
+                              <h5 class="ms-1">Köksfläktar & Spiskåpor</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-fan"></span> Köksfläktar</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-dock-top"></span> Spiskåpor</a>
+                           </div>
+                           <div class="col-sm-6 col-lg-3 mb-4">
+                              <h5 class="ms-1">Tillbehör</h5>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-washing-machine"></span> Tillbehör för Tvätt & Tork</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-dishwasher"></span> Tillbehör för Diskmaskin</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-stove"></span> Tillbehör för Ugn & Spis</a>
+                              <a class="dropdown-item" href="category.html"><span class="mdi mdi-fridge"></span> Tillbehör för Kyl & Frys</a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <div class="d-flex end-buttons">
+                  <a href="cart.html" role="button" id="cart-button" class="btn btn-light me-1">
+                  <span class="mdi mdi-cart"></span>
+                  <span class="text">Kundvagn</span>
+                  <span class="position-absolute badge rounded-pill bg-danger p-0">5</span>
+                  </a>
+                  <a href="login.html" role="button" id="login-button" class="btn btn-light me-1">
+                  <span class="mdi mdi-account"></span>
+                  <span class="text">Konto</span>
+                  </a>
+                  <form class="d-flex" role="search">
+                     <input class="form-control" type="search" placeholder="Sök" aria-label="Search">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <main class="container">
+         <div class="row">
+            <aside class="col-sm-12 col-md-3 mt-3">
+               <button class="btn btn-outline-secondary w-100 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-filter" aria-controls="accordion-filter" aria-expanded="false" aria-label="Toggle navigation">
+               <span>Filter</span>
+               </button>
+               <div class="collapse card d-lg-block mb-5" id="accordion-filter">
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                     <div class="accordion-item">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#content-subcategory" aria-expanded="true" aria-controls="content-subcategory">
+                           Underkategorier
+                           </button>
+                        </h2>
+                        <div id="content-subcategory" class="accordion-collapse collapse show">
+                           <div class="accordion-body">
+                              <ul class="list-unstyled">
+                                 <li><a href="#" class="text-dark">LED</a></li>
+                                 <li><a href="#" class="text-dark">QLED</a></li>
+                                 <li><a href="#" class="text-dark">OLED</a></li>
+                                 <li><a href="#" class="text-dark">Neo QLED</a></li>
+                                 <li><a href="#" class="text-dark">Plasma</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#content-brands" aria-expanded="true" aria-controls="content-brands">
+                           Märken
+                           </button>
+                        </h2>
+                        <div id="content-brands" class="accordion-collapse collapse show">
+                           <div class="accordion-body">
+                              <div>
+                                 <!-- Checked checkbox -->
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand-checkbox-1" checked />
+                                    <label class="form-check-label" for="brand-checkbox-1">Samsung</label>
+                                 </div>
+                                 <!-- Checked checkbox -->
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand-checkbox-2" checked />
+                                    <label class="form-check-label" for="brand-checkbox-2">LG</label>
+                                 </div>
+                                 <!-- Checked checkbox -->
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand-checkbox-3" checked />
+                                    <label class="form-check-label" for="brand-checkbox-3">Sony</label>
+                                 </div>
+                                 <!-- Checked checkbox -->
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand-checkbox-4" checked />
+                                    <label class="form-check-label" for="brand-checkbox-4">Panasonic</label>
+                                 </div>
+                                 <!-- Default checkbox -->
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand-checkbox-5" />
+                                    <label class="form-check-label" for="brand-checkbox-5">Philips</label>
+                                 </div>
+                                 <!-- Default checkbox -->
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand-checkbox-6" />
+                                    <label class="form-check-label" for="brand-checkbox-6">TCL</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#content-price" aria-expanded="true" aria-controls="content-price">
+                           Pris
+                           </button>
+                        </h2>
+                        <div id="content-price" class="accordion-collapse collapse show">
+                           <div class="accordion-body">
+                              <div class="range">
+                                 <input type="range" class="form-range" id="customRange1" />
+                              </div>
+                              <div class="row mb-3">
+                                 <div class="col-6">
+                                    <p class="mb-0">
+                                       Min
+                                    </p>
+                                    <div class="form-outline">
+                                       <input type="number" id="min-price" class="form-control" />
+                                       <label class="form-label" for="min-price">1 000 :-</label>
+                                    </div>
+                                 </div>
+                                 <div class="col-6">
+                                    <p class="mb-0">
+                                       Max
+                                    </p>
+                                    <div class="form-outline">
+                                       <input type="number" id="max-price" class="form-control" />
+                                       <label class="form-label" for="max-price">50 000 :-</label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#content-size" aria-expanded="true" aria-controls="content-size">
+                           Storlek
+                           </button>
+                        </h2>
+                        <div id="content-size" class="accordion-collapse collapse show">
+                           <div class="accordion-body">
+                              <input type="checkbox" class="btn-check border justify-content-center" id="btn-check1" checked/>
+                              <label class="btn btn-white mb-1 px-1" style="width: 60px;" for="btn-check1">45"</label>
+                              <input type="checkbox" class="btn-check border justify-content-center" id="btn-check2" checked/>
+                              <label class="btn btn-white mb-1 px-1" style="width: 60px;" for="btn-check2">55"</label>
+                              <input type="checkbox" class="btn-check border justify-content-center" id="btn-check3" checked/>
+                              <label class="btn btn-white mb-1 px-1" style="width: 60px;" for="btn-check3">65"</label>
+                              <input type="checkbox" class="btn-check border justify-content-center" id="btn-check4" checked/>
+                              <label class="btn btn-white mb-1 px-1" style="width: 60px;" for="btn-check4">75"</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button text-dark bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#content-rating" aria-expanded="true" aria-controls="content-rating">
+                           Betyg
+                           </button>
+                        </h2>
+                        <div id="content-rating" class="accordion-collapse collapse show rating align-middle">
+                           <div class="accordion-body">
+                              <!-- Default checkbox -->
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="rating-checkbox-1" checked />
+                                 <label class="form-check-label" for="rating-checkbox-1">
+                                 <span class="mdi mdi-star"></span><span class="mdi mdi-star-outline"></span><span class="mdi mdi-star-outline"></span><span class="mdi mdi-star-outline"></span><span class="mdi mdi-star-outline"></span>
+                                 </label>
+                              </div>
+                              <!-- Default checkbox -->
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="rating-checkbox-2" checked />
+                                 <label class="form-check-label" for="rating-checkbox-2">
+                                 <span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star-outline"></span><span class="mdi mdi-star-outline"></span><span class="mdi mdi-star-outline"></span>
+                                 </label>
+                              </div>
+                              <!-- Default checkbox -->
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="rating-checkbox-3" checked />
+                                 <label class="form-check-label" for="rating-checkbox-3">
+                                 <span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star-outline"></span><span class="mdi mdi-star-outline"></span>
+                                 </label>
+                              </div>
+                              <!-- Default checkbox -->
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="rating-checkbox-4" checked />
+                                 <label class="form-check-label" for="rating-checkbox-4">
+                                 <span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star-outline"></span>
+                                 </label>
+                              </div>
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="rating-checkbox-5" checked />
+                                 <label class="form-check-label" for="rating-checkbox-5">
+                                 <span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span><span class="mdi mdi-star"></span>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </aside>
+            <div class="col-sm-12 col-md-9">
+               <div class="row">
+                  <article class="col-12 col-sm-6 col-md-4 mt-4">
+                     <div class="card h-100">
+                        <div class="img-container position-relative">
+                           <div class="img-caption-top text-white top-0 position-absolute">
+                              <span>-50%</span>
+                           </div>
+                           <a href="product.html">
+                           <img class="card-img-top w-100 h-100" src="https://dummyimage.com/450x300/" alt="...">
+                           </a>
+                        </div>
+                        <div class="card-body p-4 pb-0">
+                           <a href="product.html">
+                              <h5 class="fw-bolder">Lorem ipsum</h5>
+                           </a>
+                           <div class="list-unstyled">
+                              <p>&#9642; Lorem ipsum dolor sit amet.</p>
+                              <p>&#9642; Duis aute irure dolor.</p>
+                              <p>&#9642; Excepteur sint occaecat.</p>
+                           </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <h4 class="text-end fw-bolder">
+                              <span class="text-muted text-decoration-line-through">750 :-</span>
+                              <span class="text-red"> 500:-</span>
+                           </h4>
+                           <button type="button" class="btn btn-primary w-100">Lägg till i kundvagn</button>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="col-12 col-sm-6 col-md-4 mt-4">
+                     <div class="card h-100">
+                        <a href="product.html">
+                        <img class="card-img-top w-100 h-100" src="https://dummyimage.com/450x300/" alt="...">
+                        </a>
+                        <div class="card-body p-4 pb-0">
+                           <a href="product.html">
+                              <h5 class="fw-bolder">Lorem ipsum</h5>
+                           </a>
+                           <div class="list-unstyled">
+                              <p>&#9642; Lorem ipsum dolor sit amet.</p>
+                              <p>&#9642; Duis aute irure dolor.</p>
+                              <p>&#9642; Excepteur sint occaecat.</p>
+                           </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <h4 class="text-end fw-bolder">
+                              <span> 500:-</span>
+                           </h4>
+                           <button type="button" class="btn btn-primary w-100">Lägg till i kundvagn</button>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="col-12 col-sm-6 col-md-4 mt-4">
+                     <div class="card h-100">
+                        <a href="product.html">
+                        <img class="card-img-top w-100 h-100" src="https://dummyimage.com/450x300/" alt="...">
+                        </a>
+                        <div class="card-body p-4 pb-0">
+                           <a href="product.html">
+                              <h5 class="fw-bolder">Lorem ipsum</h5>
+                           </a>
+                           <div class="list-unstyled">
+                              <p>&#9642; Lorem ipsum dolor sit amet.</p>
+                              <p>&#9642; Duis aute irure dolor.</p>
+                              <p>&#9642; Excepteur sint occaecat.</p>
+                           </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <h4 class="text-end fw-bolder">
+                              <span> 500:-</span>
+                           </h4>
+                           <button type="button" class="btn btn-primary w-100">Lägg till i kundvagn</button>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="col-12 col-sm-6 col-md-4 mt-4">
+                     <div class="card h-100">
+                        <a href="product.html">
+                        <img class="card-img-top w-100 h-100" src="https://dummyimage.com/450x300/" alt="...">
+                        </a>
+                        <div class="card-body p-4 pb-0">
+                           <a href="product.html">
+                              <h5 class="fw-bolder">Lorem ipsum</h5>
+                           </a>
+                           <div class="list-unstyled">
+                              <p>&#9642; Lorem ipsum dolor sit amet.</p>
+                              <p>&#9642; Duis aute irure dolor.</p>
+                              <p>&#9642; Excepteur sint occaecat.</p>
+                           </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <h4 class="text-end fw-bolder">
+                              <span> 500:-</span>
+                           </h4>
+                           <button type="button" class="btn btn-primary w-100">Lägg till i kundvagn</button>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="col-12 col-sm-6 col-md-4 mt-4">
+                     <div class="card h-100">
+                        <div class="img-container position-relative">
+                           <a href="product.html">
+                           <img class="card-img-top w-100 h-100" src="https://dummyimage.com/450x300/" alt="...">
+                           </a>
+                        </div>
+                        <div class="card-body p-4 pb-0">
+                           <a href="product.html">
+                              <h5 class="fw-bolder">Lorem ipsum</h5>
+                           </a>
+                           <div class="list-unstyled">
+                              <p>&#9642; Lorem ipsum dolor sit amet.</p>
+                              <p>&#9642; Duis aute irure dolor.</p>
+                              <p>&#9642; Excepteur sint occaecat.</p>
+                           </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <h4 class="text-end fw-bolder">
+                              <span> 500:-</span>
+                           </h4>
+                           <button type="button" class="btn btn-primary w-100">Lägg till i kundvagn</button>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="col-12 col-sm-6 col-md-4 mt-4">
+                     <div class="card h-100">
+                        <a href="product.html">
+                        <img class="card-img-top w-100 h-100" src="https://dummyimage.com/450x300/" alt="...">
+                        </a>
+                        <div class="card-body p-4 pb-0">
+                           <a href="product.html">
+                              <h5 class="fw-bolder">Lorem ipsum</h5>
+                           </a>
+                           <div class="list-unstyled">
+                              <p>&#9642; Lorem ipsum dolor sit amet.</p>
+                              <p>&#9642; Duis aute irure dolor.</p>
+                              <p>&#9642; Excepteur sint occaecat.</p>
+                           </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <h4 class="text-end fw-bolder">
+                              <span> 500:-</span>
+                           </h4>
+                           <button type="button" class="btn btn-primary w-100">Lägg till i kundvagn</button>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="col-12 col-sm-6 col-md-4 mt-4">
+                     <div class="card h-100">
+                        <a href="product.html">
+                        <img class="card-img-top w-100 h-100" src="https://dummyimage.com/450x300/" alt="...">
+                        </a>
+                        <div class="card-body p-4 pb-0">
+                           <a href="product.html">
+                              <h5 class="fw-bolder">Lorem ipsum</h5>
+                           </a>
+                           <div class="list-unstyled">
+                              <p>&#9642; Lorem ipsum dolor sit amet.</p>
+                              <p>&#9642; Duis aute irure dolor.</p>
+                              <p>&#9642; Excepteur sint occaecat.</p>
+                           </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <h4 class="text-end fw-bolder">
+                              <span> 500:-</span>
+                           </h4>
+                           <button type="button" class="btn btn-primary w-100">Lägg till i kundvagn</button>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="col-12 col-sm-6 col-md-4 mt-4">
+                     <div class="card h-100">
+                        <a href="product.html">
+                        <img class="card-img-top w-100 h-100" src="https://dummyimage.com/450x300/" alt="...">
+                        </a>
+                        <div class="card-body p-4 pb-0">
+                           <a href="product.html">
+                              <h5 class="fw-bolder">Lorem ipsum</h5>
+                           </a>
+                           <div class="list-unstyled">
+                              <p>&#9642; Lorem ipsum dolor sit amet.</p>
+                              <p>&#9642; Duis aute irure dolor.</p>
+                              <p>&#9642; Excepteur sint occaecat.</p>
+                           </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <h4 class="text-end fw-bolder">
+                              <span> 500:-</span>
+                           </h4>
+                           <button type="button" class="btn btn-primary w-100">Lägg till i kundvagn</button>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="col-12 col-sm-6 col-md-4 mt-4">
+                     <div class="card h-100">
+                        <a href="product.html">
+                        <img class="card-img-top w-100 h-100" src="https://dummyimage.com/450x300/" alt="...">
+                        </a>
+                        <div class="card-body p-4 pb-0">
+                           <a href="product.html">
+                              <h5 class="fw-bolder">Lorem ipsum</h5>
+                           </a>
+                           <div class="list-unstyled">
+                              <p>&#9642; Lorem ipsum dolor sit amet.</p>
+                              <p>&#9642; Duis aute irure dolor.</p>
+                              <p>&#9642; Excepteur sint occaecat.</p>
+                           </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <h4 class="text-end fw-bolder">
+                              <span> 500:-</span>
+                           </h4>
+                           <button type="button" class="btn btn-primary w-100">Lägg till i kundvagn</button>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </main>
+      <br><br>
+      <footer>
+         <div class="container py-5">
+            <div class="row">
+               <div class="col-12 col-md">
+                  <img src="images/logo.webp" alt="..." height="30">
+                  <small class="d-block my-3 text-muted">© 2024</small>
+               </div>
+               <div class="col-6 col-md">
+                  <h6><b>Posuere urna nec tincidunt</b></h6>
+                  <ul class="list-unstyled text-small">
+                     <li>
+                        <a class="text-muted" href="#">Lorem sed</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Risus ultricies</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Tristique nulla</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Aliquet enim</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Ipsum a arcu</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Nulla malesuada</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-6 col-md">
+                  <h6><b>Sem nulla pharetra</b></h6>
+                  <ul class="list-unstyled text-small">
+                     <li>
+                        <a class="text-muted" href="#">Sollicitudin nibh</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Enim blandit</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Dui faucibus</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Tristique senectu</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-6 col-md">
+                  <h6><b>Enim nulla aliquet</b></h6>
+                  <ul class="list-unstyled text-small">
+                     <li>
+                        <a class="text-muted" href="#">Nullam non</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">suspendisse in est</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Vitae tortor condimentum</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">At erat pellentesque</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-6 col-md">
+                  <h6><b>Gravida arcu</b></h6>
+                  <ul class="list-unstyled text-small">
+                     <li>
+                        <a class="text-muted" href="#">Enim diam vulputate</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Blandit volutpat</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Vel eros donec</a>
+                     </li>
+                     <li>
+                        <a class="text-muted" href="#">Ridiculus mus</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+             // Funktion för att kontrollera fönstrets bredd är större än 975 pixlar
+             function checkWindowWidth() {
+                 return window.innerWidth > 975;
+             }
+         
+             // Funktion för att hantera händelser för dropdown- och megamenyer
+             // Megamenyer aktiveras genom att hovera över dem med musen när fönsterbredden överstiger 975 pixlar
+             // Annars krävs klick för att aktivera dem
+             function handleDropdownEvents() {
+                 const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+                 // Kontrollerar om fönstrets bredd är tillräckligt stor
+                 if (checkWindowWidth()) {
+                     // Om fönstrets bredd är tillräckligt stor, inaktivera dropdown-toggling (klickbarhet) för varje toggle-element
+                     dropdownToggles.forEach(function (toggle) {
+                         toggle.setAttribute('data-bs-toggle', 'disabled');
+                     });
+                 } else {
+                     // Om fönstrets bredd inte är tillräckligt stor, aktivera dropdown-toggling (klickbarhet) för varje toggle-element
+                     dropdownToggles.forEach(function (toggle) {
+                         toggle.setAttribute('data-bs-toggle', 'dropdown');
+                     });
+                 }
+             }
+         
+             handleDropdownEvents();
+         
+             // Lägger till en händelselyssnare för fönsterstorleksändringar
+             window.addEventListener('resize', function() {
+                 handleDropdownEvents();
+             });
+         });
+      </script>
+   </body>
+</html>
