@@ -1,0 +1,395 @@
+[
+  {
+    "category": "Dator",
+    "subcategories": [
+      {
+        "title": "Enheter",
+        "items": [
+          {
+            "iconClass": "laptop",
+            "text": "Laptop"
+          },
+          {
+            "iconClass": "desktop-classic",
+            "text": "Stationära datorer"
+          },
+          {
+            "iconClass": "tablet",
+            "text": "Surfplattor"
+          }
+        ]
+      },
+      {
+        "title": "Tillbehör",
+        "items": [
+          {
+            "iconClass": "monitor",
+            "text": "Datorskärmar"
+          },
+          {
+            "iconClass": "printer",
+            "text": "Skrivare & Scanner"
+          },
+          {
+            "iconClass": "network",
+            "text": "Nätverk"
+          },
+          {
+            "iconClass": "cable-data",
+            "text": "Datortillbehör"
+          }
+        ]
+      },
+      {
+        "title": "Datorkomponenter",
+        "items": [
+          {
+            "iconClass": "harddisk",
+            "text": "Hårddisk & SSD"
+          },
+          {
+            "iconClass": "expansion-card",
+            "text": "Grafikkort"
+          },
+          {
+            "iconClass": "cpu-64-bit",
+            "text": "Processor"
+          },
+          {
+            "iconClass": "developer-board",
+            "text": "Moderkort"
+          },
+          {
+            "iconClass": "cube-outline",
+            "text": "Datorchassi"
+          },
+          {
+            "iconClass": "server-outline",
+            "text": "NUC / Barebone"
+          },
+          {
+            "iconClass": "memory",
+            "text": "RAM-minne"
+          },
+          {
+            "iconClass": "lightning-bolt",
+            "text": "Nätaggregat"
+          },
+          {
+            "iconClass": "plus-network-outline",
+            "text": "Nätverkskort"
+          },
+          {
+            "iconClass": "coolant-temperature",
+            "text": "Kylning"
+          },
+          {
+            "iconClass": "ethernet-cable",
+            "text": "Installationstillbehör"
+          },
+          {
+            "iconClass": "update",
+            "text": "Uppgraderingspaket"
+          }
+        ]
+      },
+      {
+        "title": "Programvara",
+        "items": [
+          {
+            "iconClass": "application",
+            "text": "Programvara"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Hem & Fritid",
+    "subcategories": [
+      {
+        "title": "Hem och trädgård",
+        "items": [
+          {
+            "iconClass": "grill",
+            "text": "Grill"
+          },
+          {
+            "iconClass": "vacuum",
+            "text": "Dammsugare & Rengöring"
+          },
+          {
+            "iconClass": "shovel",
+            "text": "Trädgård"
+          },
+          {
+            "iconClass": "lightbulb",
+            "text": "Lampor & Belysning"
+          }
+        ]
+      },
+      {
+        "title": "Kök och köksredskap",
+        "items": [
+          {
+            "iconClass": "coffee-maker",
+            "text": "Kaffemaskiner"
+          },
+          {
+            "iconClass": "stove",
+            "text": "Köksmaskiner"
+          },
+          {
+            "iconClass": "silverware-spoon",
+            "text": "Köksredskap"
+          }
+        ]
+      },
+      {
+        "title": "Teknik och elektronik",
+        "items": [
+          {
+            "iconClass": "home-automation",
+            "text": "Smarta Hem"
+          },
+          {
+            "iconClass": "car-back",
+            "text": "Elfordon"
+          },
+          {
+            "iconClass": "navigation",
+            "text": "Bil & GPS"
+          },
+          {
+            "iconClass": "battery",
+            "text": "El & Batterier"
+          }
+        ]
+      },
+      {
+        "title": "Fritid och hobby",
+        "items": [
+          {
+            "iconClass": "content-cut",
+            "text": "Personvård"
+          },
+          {
+            "iconClass": "wrench",
+            "text": "Verktyg"
+          },
+          {
+            "iconClass": "quadcopter",
+            "text": "Drönare & Actionkameror"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Bild & Ljud",
+    "subcategories": [
+      {
+        "title": "Bild",
+        "items": [
+          {
+            "iconClass": "television",
+            "text": "TV"
+          },
+          {
+            "iconClass": "projector",
+            "text": "Projektorer"
+          },
+          {
+            "iconClass": "sign-text",
+            "text": "Digital signage"
+          }
+        ]
+      },
+      {
+        "title": "Ljud",
+        "items": [
+          {
+            "iconClass": "speaker",
+            "text": "Högtalare"
+          },
+          {
+            "iconClass": "headset",
+            "text": "Hörlurar"
+          },
+          {
+            "iconClass": "soundbar",
+            "text": "Soundbar"
+          },
+          {
+            "iconClass": "radio",
+            "text": "Radio & Stereo"
+          },
+          {
+            "iconClass": "microphone",
+            "text": "Mikrofoner"
+          },
+          {
+            "iconClass": "knob",
+            "text": "DJ- & PA-utrustning"
+          }
+        ]
+      },
+      {
+        "title": "Streaming och underhållning",
+        "items": [
+          {
+            "iconClass": "movie",
+            "text": "Film & Musik"
+          },
+          {
+            "iconClass": "view-stream",
+            "text": "Streamingtjänster"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Vitvaror",
+    "subcategories": [
+      {
+        "title": "Tvätt & Tork",
+        "items": [
+          {
+            "iconClass": "washing-machine",
+            "text": "Tvättmaskin"
+          },
+          {
+            "iconClass": "file-cabinet",
+            "text": "Torktumlare & Torkskåp"
+          },
+          {
+            "iconClass": "tumble-dryer",
+            "text": "Kombinerad Tvättmaskin & Torktumlare"
+          }
+        ]
+      },
+      {
+        "title": "Diskmaskin",
+        "items": [
+          {
+            "iconClass": "dishwasher",
+            "text": "Diskmaskin"
+          }
+        ]
+      },
+      {
+        "title": "Ugn & Spis",
+        "items": [
+          {
+            "iconClass": "induction",
+            "text": "Spishäll"
+          },
+          {
+            "iconClass": "stove",
+            "text": "Ugn"
+          },
+          {
+            "iconClass": "stove",
+            "text": "Spis"
+          },
+          {
+            "iconClass": "microwave",
+            "text": "Mikrovågsugn"
+          },
+          {
+            "iconClass": "toaster-oven",
+            "text": "Miniugn & Bordsspis"
+          },
+          {
+            "iconClass": "pizza",
+            "text": "Pizzaugn"
+          },
+          {
+            "iconClass": "countertop-outline",
+            "text": "Minikök"
+          },
+          {
+            "iconClass": "induction",
+            "text": "Kokplatta"
+          },
+          {
+            "iconClass": "heat-wave",
+            "text": "Värmelåda"
+          }
+        ]
+      },
+      {
+        "title": "Kyl & Frys",
+        "items": [
+          {
+            "iconClass": "fridge",
+            "text": "Kyl & Frys kombiskåp"
+          },
+          {
+            "iconClass": "fridge-industrial",
+            "text": "Kylskåp"
+          },
+          {
+            "iconClass": "fridge-industrial-outline",
+            "text": "Frysskåp"
+          },
+          {
+            "iconClass": "fridge-top",
+            "text": "Frysbox"
+          },
+          {
+            "iconClass": "fridge-variant",
+            "text": "Kyl & Frys side-by-side"
+          },
+          {
+            "iconClass": "fridge-variant-outline",
+            "text": "Integrerad Kyl och Frys"
+          },
+          {
+            "iconClass": "fridge-top",
+            "text": "Minikyl"
+          },
+          {
+            "iconClass": "bag-personal-outline",
+            "text": "Kylväskor & Kylboxar"
+          }
+        ]
+      },
+      {
+        "title": "Köksfläktar & Spiskåpor",
+        "items": [
+          {
+            "iconClass": "fan",
+            "text": "Köksfläktar"
+          },
+          {
+            "iconClass": "dock-top",
+            "text": "Spiskåpor"
+          }
+        ]
+      },
+      {
+        "title": "Tillbehör",
+        "items": [
+          {
+            "iconClass": "washing-machine",
+            "text": "Tillbehör för Tvätt & Tork"
+          },
+          {
+            "iconClass": "dishwasher",
+            "text": "Tillbehör för Diskmaskin"
+          },
+          {
+            "iconClass": "stove",
+            "text": "Tillbehör för Ugn & Spis"
+          },
+          {
+            "iconClass": "fridge",
+            "text": "Tillbehör för Kyl & Frys"
+          }
+        ]
+      }
+    ]
+  }
+]

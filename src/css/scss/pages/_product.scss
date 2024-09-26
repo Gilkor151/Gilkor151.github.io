@@ -1,0 +1,39 @@
+@media (min-width: $width-nav-change) {
+  .content {
+    display: block !important;
+  }
+  .text {
+    display: none;
+  }
+  .responsive-tabs .nav-tabs {
+    display: flex;
+  }
+  .responsive-tabs-heading {
+    display: none;
+  }
+}
+
+@media (max-width: $width-nav-change) {
+  .responsive-tabs .tab-pane {
+    display: block !important;
+    opacity: 1;
+    border: 0;
+  }
+  .responsive-tabs .nav-tabs {
+    display: none;
+  }
+  #additional-content {
+    border: 1px solid $color-grey-light-3;
+    border-radius: 5px;
+  }
+  .responsive-tabs-heading {
+    border: 0;
+    border-top: 1px solid $color-grey-light-3;
+  }
+  #pane-accessories .responsive-tabs-heading {
+    border-top: 0 !important;
+  }
+  .responsive-tabs-heading, .responsive-tabs-heading h2 a {
+    border-radius: 0 !important;
+  }
+}
